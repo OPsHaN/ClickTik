@@ -55,14 +55,14 @@
       <table class="pagination">
         <tr>
           <td>
-            <button class="btn" (click)="getProducts(0, currentpageIndex)">
+            <button class="btn" (click)="getProducts(currentpageIndex * limitItems , 0)">
               {{ "<<" }}
             </button>
           </td>
           <td *ngFor="let pagenumber of pagesnumbers">
             <button class="btn" (click)="getProducts(currentpageIndex * limitItems , pagenumber - 1 )
-              "[style.background-color]="pagenumber - 1 == currentpageIndex ? 'cyan' : 'gray'">
-              {{ pagenumber }}
+              " [style.background-color]="pagenumber - 1 == currentpageIndex ? 'cyan' : 'gray'">
+              {{pagenumber}}
             </button>
           </td>
           <td>
