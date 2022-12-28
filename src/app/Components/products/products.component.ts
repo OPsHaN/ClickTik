@@ -16,22 +16,21 @@ categoryList:any[] = [];
 totalItems!:number;
 skipItems:number = 0;
 limitItems:number =9;
-currentpageIndex =0;
+currentpageIndex: number = 0;
 pagesnumbers:number[]=[];
 
   constructor(private product:ProductsService) { }
 
   ngOnInit(): void {
-
-this.getProducts( this.skipItems , this.currentpageIndex)
+this.getProducts(this.skipItems , this.currentpageIndex)
 this.getCategories();
+
   }
 
 
   //getProducts
-  getProducts( skip:number , currentPage:number){
-
-    this.product.getproductList(this.limitItems ,skip).subscribe((result)=> {
+  getProducts(skip:number , currentPage:number){
+    this.product.getproductList(this.limitItems , this.limitItems*currentPage).subscribe((result)=> {
       this.productList=result.products;
       this.totalItems=result.total;
       this.skipItems=skip;
@@ -43,8 +42,9 @@ this.getCategories();
       })
 
   }
+  
 
-  trackByFn(index: any, item: any) {
+  trackByFn(index: any) {
     return index;
   }
 
@@ -79,7 +79,6 @@ getFilterProducts(keyword:string){
 this.productList = res.products;
 });
 }
-
 
 
 }
