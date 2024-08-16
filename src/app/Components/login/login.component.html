@@ -1,0 +1,22 @@
+<div class="login">
+ <div class="center">
+<div id="bord"><img src="/assets/Content.svg"/></div>
+</div>
+  <div class="login-header">
+    <h1>Log in to your account</h1>
+    <br>
+    <h4>Welcome back ! Please Enter Your Details</h4>
+  </div>
+  <div class="login-form">
+    <h3>Username:</h3>
+    <input type="text" required #name placeholder="Username"  (change)="checkname(name.value)"  name="username" [(ngModel)]="username"><br>
+    <small *ngIf="NameError" class="text-danger">{{NameError}}</small>
+    <h3>Password:</h3>
+    <input type="password" required #pass placeholder="Password" (change)="checkpass(pass.value)" name="password" [(ngModel)]="password">
+    <small *ngIf="PasswordError" class="text-danger">{{PasswordError}}</small>
+    <br>
+    <br>
+    <input type="button" value="Login" class="login-button" (click)="login()"/>
+    <br>
+  </div>
+</div>
