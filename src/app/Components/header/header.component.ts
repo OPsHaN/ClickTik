@@ -41,8 +41,9 @@ this.totalItems = res.length;
 this.getCountCart();
 
 //get the the username from localsrorage
-this.welcomeUser = localStorage.getItem("username");
-
+this.auth.userName$.subscribe(name => {
+  this.welcomeUser = name;
+});
   }
 
 

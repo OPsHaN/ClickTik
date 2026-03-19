@@ -229,19 +229,19 @@ input.qty {
 		padding: 1em .8em 1em 1.2em;
     cursor: pointer;
     &:hover {
-      background: rgb(49, 127, 151);
+      background: rgb(0, 234, 255);
       color: #ffffff; 
     }
     }
 .submit {
 	margin-left: 1em;
 	border: none;
-  background: #41CCCC  ;
-	color: #000000;
+  background: #0011ff  ;
+	color: #fcfcfc;
   cursor: pointer;
   width:50%;
   &:hover {
-  background: rgb(49, 127, 151);
+      background: rgb(0, 234, 255);
 }
 }
 input::-webkit-inner-spin-button {

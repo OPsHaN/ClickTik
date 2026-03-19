@@ -48,7 +48,7 @@ checkname(name: any) {
   console.log(this.NameError);
 
   if (!this.Name.test(name)) {
-    this.NameError = 'Try Again With Correct Username';
+    this.NameError = 'Try again with correct username';
   }
   else {
     this.NameError=undefined;
@@ -56,11 +56,13 @@ checkname(name: any) {
 }
 checkpass(password: any) {
   if (!this.Password.test(password)) {
-    this.PasswordError ="Password should contain more than 5 characters"
+    this.PasswordError ="Password should contain more than 6 characters"
   }
   else {
     this.PasswordError = undefined;
   }
 
 }
+
+
 }

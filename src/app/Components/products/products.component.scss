@@ -94,8 +94,8 @@ nav ul a {
 }
 
 .btn {
-  background-color: #41CCCC  ;
-  color: rgb(0, 0, 0);
+  background-color: #0011ff  ;
+  color: rgb(255, 255, 255);
   font-size: 16px;
   padding: 10px 20px;
   border: none;
@@ -105,14 +105,14 @@ nav ul a {
 }
 
 .btn:hover {
-  background-color: #41CCCC  ;
-  color: rgb(0, 0, 0);
+  background-color: #0011ff  ;
+  color: rgb(255, 255, 255);
 }
 ////////////Products Card///////////////
 .discount {
   position: absolute;
-  background-color: #41CCCC  ;
-  color: rgb(0, 0, 0);
+  background-color: #0011ff  ;
+  color: rgb(255, 255, 255);
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 10px;
@@ -159,7 +159,7 @@ nav ul a {
 }
 
 .text > button {
-  background: #41CCCC  (73, 181, 214);
+  background: #0011ff  (73, 181, 214);
   border-radius: 5px;
   padding: 10px;
   width: 100%;
@@ -254,12 +254,12 @@ input.qty {
 .submit {
 	margin-left: 1em;
 	border: none;
-  background: #41CCCC;
-	color: #000000;
+  background: #0011ff;
+	color: #ffffff;
   cursor: pointer;
   width:50%;
   &:hover {
-  background: #41CCCC  (49, 127, 151);
+  background: #0011ff  (49, 127, 151);
 }
 }
 input::-webkit-inner-spin-button {
